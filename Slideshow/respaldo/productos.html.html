@@ -1,0 +1,185 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Act</title>
+ 
+    <style>
+ 
+        .mover {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(127, 203, 250);
+        color: white;
+        font-family: 'Monterrat', sans-serif;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        animation: moverAnim 3s infinite ease-in-out;
+    }
+ 
+    .escalar {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(241, 255, 90);
+        color: white;
+        font-family: 'Monterrat', sans-serif;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        animation: escalarAnim 3s infinite ease-in-out;
+    }
+ 
+    .rotar {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(224, 101, 229);
+        color: white;
+        font-family: 'Monterrat', sans-serif;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        animation: rotarAnim 3s infinite linear;
+    }
+ 
+    .color {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(170, 224, 123);
+        color: white;
+        font-family: 'Monterrat', sans-serif;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        animation: colorAnim 3s infinite ease-in-out;
+    }
+     .todos {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(206, 95, 134);
+        color: white;
+        font-family: 'Monterrat', sans-serif;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        animation:
+        colorAnim 3s infinite ease-in-out, todoJuntoAnim 3s infinite ease-in-out;
+    }
+ 
+@keyframes moverAnim {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(150px);
+        }
+    }
+ 
+    @keyframes escalarAnim {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(1.5);
+        }
+    }
+    @keyframes rotarAnim {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+ 
+    @keyframes colorAnim {
+        0% {
+            background-color: rgb(206, 95, 134);
+        }
+ 
+        100% {
+            background-color: rgb(255, 174, 87);
+        }
+    }
+    @keyframes todoJuntoAnim {
+        0% {
+            transform: translateX(0) scale(1) rotate(0deg);
+        }
+        100% {
+            transform: translateX(150px) scale(1.5) rotate(360deg);
+        }
+    }
+    @font-face {
+       font-family: 'Narnia';
+       src: url('fonts/Narnia-Regular.ttf') format('truetype');
+       font-weight: 300;
+       font-style: normal;
+    }
+    h1{
+         font-family: 'Narnia';
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        font-size:90px ;
+    }
+    h3{
+        font-family:'Montserrat', sans-serif;
+        text-align: center;
+        margin-left: 150px;
+        margin-right: 150px;
+        font-size: 22px;
+    }
+     .boton {
+            display: inline-block;
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: rgb(11, 57, 156);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+           margin-left: 670px;
+        }
+ 
+        .boton:hover {
+            background-color: rgb(20, 52, 123);
+        }
+       .mover p{
+            text-align: center;
+            padding-top: 45px;
+        }
+       .escalar p{
+            text-align: center;
+            padding-top: 30px;
+        }
+        .rotar p{
+            text-align: center;
+            padding-top: 30px;
+        }
+        .color p{
+            text-align: center;
+            padding-top: 30px;
+        }
+        .todos p{
+            text-align: center;
+            padding-top: 30px;
+        }
+       
+       
+</style>
+ 
+    </head>
+<body>
+    <h1>Microinteracciones</h1>
+    <h3>Su objetivo es dar feedback al usuario, bien sobre una acción que ha realizado, o bien sobre el estado del sistema, que se comunica a través de cambios visuales en la interfaz.  </h2>
+    <div class="mover"><p>Mover</p></div>
+    <div class="escalar"><p></p>Escalar</div>
+    <div class="rotar"><p></p>Rotar</div>
+    <div class="color"><p></p>Color</div>
+    <div class="todos"><p></p>Color</div>
+    <a class="boton"  href="productos.html/productos.html.html">Ir a carrusel</a>
+    </body>
+</html>
